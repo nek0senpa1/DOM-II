@@ -79,8 +79,18 @@ button[1].addEventListener('select', function(e) {
     alert('AHHHHH, I changed my mind. Do not touch me!');
 });
 
+/*
 button[2].addEventListener('select', function(e) { 
     // Don't do the default behavior in HTML
     e.preventDefault();
-    e.target.textContent = "I Don't Like You Either...";
+    e.target.value = "STUFF STUFF";
+    
+    //button[2].textContent = "I Don't Like You Either...";
 });
+*/
+
+const widgything = document.querySelector('#widgy');
+
+widgything.addEventListener('select', function(e){
+    e.target.value = "I Don't Like You Either";
+})
