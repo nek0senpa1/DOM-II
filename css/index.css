@@ -202,7 +202,7 @@ img {
 .main-navigation .nav-container .nav {
   width: 350px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 @media (max-width: 500px) {
   .main-navigation .nav-container .nav {
