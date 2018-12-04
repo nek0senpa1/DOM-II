@@ -94,3 +94,18 @@ const widgything = document.querySelector('#widgy');
 widgything.addEventListener('select', function(e){
     e.target.value = "I Don't Like You Either";
 })
+
+
+
+const zoomy = document.querySelector(".zoom");
+
+zoomy.addEventListener('click', function(e){
+    
+    var audio = new Audio('img/carscreech.wav');
+    audio.loop = false;
+    audio.play();
+
+    TweenMax.to(".zoom", 9, {x:1700});
+
+})
+
